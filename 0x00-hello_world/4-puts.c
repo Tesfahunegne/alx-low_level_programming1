@@ -5,7 +5,7 @@
  *
  * Description : using in put function
  * this program print "programming is building a multingual puzzle"
- * Retuen: 0
+ * Return: 0
  */
 int main(void)
 {
