@@ -2,7 +2,6 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- *
  * main -main block
  *
  * Description: get a random number and print the number
@@ -16,11 +15,10 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n % 10 > 5)
-		printf("Last digit of %i is %i and is  greater than 5\n", n, n % 10);
+		printf("Last digit of %i is %i is  greater than 5\n", n, n % 10);
 	else if (n % 10 == 0)
 		printf("Last digit of %i is %i is  and 0\n", n, n % 10);
 	else if (n % 10 < 6)
 		printf("Last digit of %i is %i is less 6 not 0\n", n, n % 10);
-	
 	return (0);
 }
