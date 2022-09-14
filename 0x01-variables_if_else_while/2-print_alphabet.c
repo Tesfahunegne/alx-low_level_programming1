@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
  * main - main function
  *
  * Description: print a to z small leter
@@ -10,6 +9,7 @@
 int main(void)
 {
 	char a = 'a';
+
 	while (a <= 'z')
 	{
 		putchar(a);
