@@ -10,19 +10,17 @@
 int main(void)
 {
 	char q = '0';
+	char z = 'a';
 
 	while (q <= '9')
 	{
 		putchar(q);
 		q++;
 	}
-
-	char b = 'a';
-
-	while (b <= 'f')
+	while (z <= 'f')
 	{
-		putchar(b);
-		b++;
+		putchar(z);
+		z++;
 	}
 	putchar('\n');
 	return (0);
