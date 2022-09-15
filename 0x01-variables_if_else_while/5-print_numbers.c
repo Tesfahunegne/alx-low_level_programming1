@@ -15,7 +15,7 @@ int main(void)
 
 	while (c <= '9')
 	{
-		putcar(c);
+		putchar(c);
 		c++;
 	}
 	putchar('\n');
