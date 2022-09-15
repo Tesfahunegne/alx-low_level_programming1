@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-/**
+#include <time.h>
+/*
  * main - main function
  *
  * Description: print base 10 and  a to f
