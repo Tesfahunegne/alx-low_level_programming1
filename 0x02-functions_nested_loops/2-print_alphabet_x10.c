@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - check the code
+ * print_alphabet_x10 - print from a to z in small case
  *
  * Return: Always 0
  */
