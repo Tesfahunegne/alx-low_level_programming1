@@ -1,45 +1,23 @@
-#includ "main.h"
+#include "main.h"
 /**
- * rev_string - revers a string in back wards
- * @s - pointer for string
- * Rerurn: reverse string
+ * rev_string - revers array string
+ * @s: pointer
+ * Return: Always 0 (Success)
  */
 void rev_string(char *s)
 {
-	int length, c;
+	int i;
+	int j;
+	char k;
 
-	   char *begin, *end, temp;
-
-	    
-
-	      length = string_length(s);
-	         begin = s;
-
-		    end = string;
-
-		     
-
-		       for ( c = 0 ; c < ( length - 1 ) ; c++ )
-
-			             end++;
-
-		        
-
-		          for ( c = 0 ; c < length/2 ; c++ ) 
-
-				     {        
-
-					           temp = *end;
-
-						         *end = *begin;
-
-							       *begin = temp;
-
-							        
-
-							             begin++;
-
-								           end--;
-
-									      }
+	for (i = 0 ; s[i] != '\0' ; i++)
+	{
+	}
+	i--;
+	for (j = 0 ; j < i ; j++, i--)
+	{
+		k = *(s + i);
+		*(s + i) = *(s + j);
+		*(s + j) = k;
+	}
 }
