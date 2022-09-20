@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _isalpha - is alphabet or not
+ * @c: intiger frm the calling funcin
  *
  * Return: 1 if c is a letter (lower or uppercase), 0 otherwise
  */
