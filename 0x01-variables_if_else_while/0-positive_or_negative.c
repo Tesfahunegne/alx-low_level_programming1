@@ -7,11 +7,12 @@
  * Description: Get a random mumber and print the number
  * and if it is postive , negative or zero
  *
- * Return : o
+ * Return: o
  */
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
