@@ -20,6 +20,5 @@ char *strcat(char *dest, const char *src)
 		dest[i] = src[a];
 		i++;
 	} while (src[a] != '\0');
-	_putchar('\n');
 	return (dest);
 }
