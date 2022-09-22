@@ -13,7 +13,9 @@ char *cap_string(char *str)
 	{
 		flag = 0;
 		if (i == 0)
+		{
 			flag = 1;
+		}
 	}
 	else
 	{
