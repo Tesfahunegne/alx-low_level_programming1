@@ -16,25 +16,24 @@ char *cap_string(char *str)
 		{
 			flag = 1;
 		}
-	}
-	else
-	{
-		for (ii = 0; sep[ii] != '\0'; ii++)
+		else
 		{
-			if (str[i - 1] == sep[ii])
+			for (ii = 0; sep[ii] != '\0'; ii++)
 			{
-				flag = 1;
-				break;
+				if (str[i - 1] == sep[ii])
+				{
+					flag = 1;
+					break;
+				}
+			}
+		}
+		if (flag == 1)
+		{
+			if (str[i] <= 'z' && str[i] >= 'a')
+			{
+				str[i] -= ('a' - 'A');
 			}
 		}
 	}
-	if (flag == 1)
-	{
-		if (str[i] <= 'z' && str[i] >= 'a')
-		{
-			str[i] -= ('a' - 'A');
-		}
-	}
-}
-return (str);
+	return (str);
 }
