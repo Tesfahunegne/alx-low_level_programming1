@@ -16,13 +16,10 @@ char *rot13(char *r)
 	{
 		for (j = 0 ; k[j] != '\0'; j++)
 		{
-			if (*(r + i) == k[j])
+			if (*(r + i) == k[j] && *(r + i) == k[j])
 			{
-				if (*(r + i) == k[j])
-				{
-					*(r + i) = n[j];
-					break;
-				}
+				*(r + i) = n[j];
+				break;
 			}
 		}
 	}
