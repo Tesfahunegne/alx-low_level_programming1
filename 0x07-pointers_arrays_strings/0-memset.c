@@ -8,13 +8,11 @@
  * Return: A pointer to the filled memory area @s
  */
 char *_memset(char *s, char b, unsigned int n)
-
 {
-	unsigned int index;
-	unsigned char *memory = s, value = b;
+	unsigned int i;
 
-	for (index = 0; index < n; index++)
-		memory[index] = value;
-	return (memory);
+	for (i = 0; i < n; i++)
+		s[i] = b;
+	return (s);
 
 }
