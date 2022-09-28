@@ -1,24 +1,34 @@
-#include "main.h"
+#include "holberton.h"
 
 
 
 /**
  *
- *  * _sqrt_recursion - find natural square root
+ *  * check - checks for the square root
  *
- *   * @n: int
+ *   * @a:int
  *
- *    * Return: int
+ *    * @b:int
  *
- *     */
+ *     *
+ *
+ *      * Return: int
+ *
+ *       */
 
-
-
-int _sqrt_recursion(int n)
+int check(int a, int b)
 
 {
 
-	return (square(n, 1));
+		if (a * a == b)
+
+					return (a);
+
+			if (a * a > b)
+
+						return (-1);
+
+				return (check(a + 1, b));
 
 }
 
@@ -26,36 +36,22 @@ int _sqrt_recursion(int n)
 
 /**
  *
- *  * square - find square root
+ *  * _sqrt_recursion - returns the natural square root of a number
  *
- *   * @n: int to find square root
+ *   * @n: integer to find sqrt of
  *
- *    * @val: square root
+ *    * Return: natural square root or -1
  *
- *     * Return: int
- *
- *      */
+ *     */
 
-
-
-int square(int n, int val)
+int _sqrt_recursion(int n)
 
 {
 
+		if (n == 0)
 
+					return (0);
 
-	if (val * val == n)
-
-			return (val);
-
-	else if (val * val < n)
-
-			return  (square(n, val + 1));
-
-	else
-
-			return (-1);
-
-
+			return (check(1, n));
 
 }
