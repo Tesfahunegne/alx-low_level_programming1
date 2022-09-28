@@ -7,7 +7,7 @@
  */
 int is_prime_number(int n)
 {
-	return (check_prime(n, 2));
+	return (check_prime(n, 2) == 0);
 }
 /**
  * check_prime - check all number < n if they can divide it
@@ -17,10 +17,10 @@ int is_prime_number(int n)
  */
 int check_prime(int n, int resp)
 {
-	if (resp >= n && n > 1)
-		return (1);
-	else if (n % resp == 0 || n <= 1)
+	if (n == 2)
 		return (0);
+	else if (n % resp == 0)
+		return (1);
 	else
 		return (check_prime(n, resp + 1));
 }
