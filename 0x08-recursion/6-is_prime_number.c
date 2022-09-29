@@ -5,6 +5,42 @@
  * @n: int
  * Return: 0 or 1
  */
+
+int check_prime(int i,int num)                                                                                                                                                                  
+
+{                                                                                                                                                                                               
+
+	        if(num==i)                                                                                                                                                                              
+
+			                                                                                                                                                                                                
+
+			                        return 0;                                                                                                                                                               
+
+		                                                                                                                                                                                                
+
+		            else                                                                                                                                                                                
+
+				                                                                                                                                                                                                    
+
+				                                if(num%i==0)                                                                                                                                                        
+
+									                                                                                                                                                                                                
+
+									                                                return 1;                                                                                                                                       
+
+			                                                                                                                                                                                                    
+
+			                    else{                                                                                                                                                                           
+
+						                                                                                                                                                                                                    
+
+						                                    return  check_prime(i+1,num);                                                                                                                                   
+
+										                                                                                                                                                                                                    
+
+										                                        }                                                                                                                                                           
+
+}
 int is_prime_number(int n)
 
 {
@@ -19,21 +55,4 @@ int is_prime_number(int n)
  * @resp: int
  * Return: int
  */
-int check_prime(int i,int num)
-{
-	if(num==i)
 
-		        return 0;
-
-	    else
-
-		            if(num%i==0)
-
-				                return 1;
-
-	        else{
-
-			        return  check_prime(i+1,num);
-
-				    }
-}
