@@ -2,7 +2,10 @@
 #include <stdio.h>
 /**
  * is_prime_number - check if n is a prime number
+ * check_prime - check
+ * @num: int
  * @n: int
+ * @i: int 
  * Return: 0 or 1
  */
 int check_prime(int i, int num)
@@ -17,6 +20,10 @@ int check_prime(int i, int num)
 			return  (check_prime(i + 1, num));
 		}
 }
+/**
+ * check_prime - check
+ * @n: int
+ */
 int is_prime_number(int n)
 
 {
@@ -25,10 +32,3 @@ int is_prime_number(int n)
 	else
 		return (0);
 }
-/**
- * check_prime - check all number < n if they can divide it
- * @n: int
- * @resp: int
- * Return: int
- */
-
