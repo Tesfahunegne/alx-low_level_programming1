@@ -8,15 +8,15 @@
  */
 int main(int args, char *argv[])
 {
-	int n1 n2 n3;
+	int n1, n2, n3;
 
 	if (args != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	n1 = antio(argv[1]);
-	n2 = antio(argv[2]);
+	n1 = atoi(argv[1]);
+	n2 = atoi(argv[2]);
 	n3 = n1 * n2;
 	printf("%d\n", n3);
 	return (0);
