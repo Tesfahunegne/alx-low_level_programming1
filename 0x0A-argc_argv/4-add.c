@@ -11,7 +11,7 @@ int main(int args, char *argv[])
 {
 	int num, digit, sum = 0;
 
-	for (num = 1; num < argc; num++)
+	for (num = 1; num < args; num++)
 	{
 		for (digit = 0; argv[num][digit]; digit++)
 		{
