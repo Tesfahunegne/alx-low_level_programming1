@@ -21,10 +21,9 @@ int main(void)
 {
 
 	    char *s;
-
-
-
-	        s = str_concat("Betty ", "Holberton");
+char *a = "Betty";
+char *b = "Holberton";
+	        s = str_concat(a,b); 
 
 		    if (s == NULL)
 
