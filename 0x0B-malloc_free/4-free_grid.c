@@ -1,20 +1,16 @@
-#include <main.h>
+#include "main.h"
 
-
-
-
+#include <stdlib.h>
 
 /**
  *
- *  * free_grid - frees a 2D grid created in 3-...
+ *  * free_grid - frees a 2-D grid previously created by alloc_grid
  *
- *   * @grid: 2D matrix
+ *   * @grid: pointer to grid to free
  *
- *    * @height: number of rows
+ *    * @height: height of grid
  *
- *     * Return: void
- *
- *      */
+ *     */
 
 void free_grid(int **grid, int height)
 
@@ -24,12 +20,10 @@ void free_grid(int **grid, int height)
 
 
 
-			i = 0;
+			for (i = 0; i < height; i++)
 
-				while (i < height)
+						free(grid[i]);
 
-							free(grid[i++]);
-
-					free(grid);
+				free(grid);
 
 }
