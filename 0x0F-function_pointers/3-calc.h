@@ -1,95 +1,57 @@
+#ifndef CALC_H
+
+#define CALC_H
+
+
+
 /*
  *
- *  * File: 3-main.c
+ *  * File: 3-calc.h
  *
  *   * Auth: Brennan D Baraban
  *
- *    */
-
-
-
-#include "3-calc.h"
-
-#include <stdlib.h>
-
-#include <stdio.h>
+ *    * Desc: Header file containing all structures and
+ *
+ *     *       prototypes used by the 3-main.c program.
+ *
+ *      */
 
 
 
 /**
  *
- *  * main - Prints the result of simple operations.
+ *  * struct op - A struct op.
  *
- *   * @argc: The number of arguments supplied to the program.
+ *   * @op: The operator.
  *
- *    * @argv: An array of pointers to the arguments.
+ *    * @f: The associated function.
  *
- *     *
- *
- *      * Return: Always 0.
- *
- *       */
+ *     */
 
-int main(int __attribute__((__unused__)) argc, char *argv[])
+typedef struct op
 
 {
 
-		int num1, num2;
+		char *op;
 
-			char *op;
+			int (*f)(int a, int b);
 
-
-
-				if (argc != 4)
-
-						{
-
-									printf("Error\n");
-
-											exit(98);
-
-												}
+} op_t;
 
 
 
-					num1 = atoi(argv[1]);
+int op_add(int a, int b);
 
-						op = argv[2];
+int op_sub(int a, int b);
 
-							num2 = atoi(argv[3]);
+int op_mul(int a, int b);
 
+int op_div(int a, int b);
 
+int op_mod(int a, int b);
 
-								if (get_op_func(op) == NULL || op[1] != '\0')
-
-										{
-
-													printf("Error\n");
-
-															exit(99);
-
-																}
+int (*get_op_func(char *s))(int, int);
 
 
 
-									if ((*op == '/' && num2 == 0) ||
-
-												    (*op == '%' && num2 == 0))
-
-											{
-
-														printf("Error\n");
-
-																exit(100);
-
-																	}
-
-
-
-										printf("%d\n", get_op_func(op)(num1, num2));
-
-
-
-											return (0);
-
-}
+#endif
