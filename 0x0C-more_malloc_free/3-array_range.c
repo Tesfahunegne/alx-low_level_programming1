@@ -8,7 +8,7 @@
 
 
 
-#include "main.h"
+#include "holberton.h"
 
 #include <stdlib.h>
 
@@ -66,4 +66,6 @@ int *array_range(int min, int max)
 
 
 
-								return (ar
+								return (array);
+
+}
