@@ -12,7 +12,7 @@
 
 int _putchar(char c);
 
-
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 void print_binary(unsigned long int n);
 
